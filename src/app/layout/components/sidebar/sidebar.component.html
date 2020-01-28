@@ -1,0 +1,62 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
+    <div class="list-group" style="margin-top:5px;">
+        <a routerLink="/applicationView" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-cogs"></i>&nbsp;
+            <span>{{ 'Merchant Application View' }}</span>
+        </a>
+        <a routerLink="/actionView" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-info-circle"></i>&nbsp;
+            <span>{{ 'Merchant Action View' }}</span>
+        </a>
+        <a routerLink="/detailView" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-info-circle"></i>&nbsp;
+            <span>{{ 'Merchant Details View' }}</span>
+        </a>
+        <a routerLink="/statusView" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-signal"></i>&nbsp;
+            <span>{{ 'Merchant Status View' }}</span>
+        </a>
+        <a routerLink="/documentView" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-eye"></i>&nbsp;
+            <span>{{ 'Merchant Document View' }}</span>
+        </a>
+        <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;
+            <span>{{ 'Charts' }}</span>
+        </a>
+        <!--<a routerLink="/contractView" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-file file-contract"></i>&nbsp;
+            <span>{{ 'Merchant Contract View' }}</span>
+        </a>
+       
+         <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+       
+        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-table"></i>&nbsp;
+            <span>{{ 'Tables' }}</span>
+        </a>
+        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-edit"></i>&nbsp;
+            <span>{{ 'Forms' }}</span>
+        </a>
+        <a [routerLink]="['/bs-element']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-desktop"></i>&nbsp;
+            <span>{{ 'Bootstrap Element'  }}</span>
+        </a>
+        <a [routerLink]="['/grid']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-wrench"></i>&nbsp;
+            <span>{{ 'Bootstrap Grid'  }}</span>
+        </a>
+        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-th-list"></i>&nbsp;
+            <span>{{ 'Component'  }}</span>
+        </a> -->
+    </div>
+    <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()">
+        <i class="fa fa-fw fa-angle-double-left"></i>&nbsp;
+        <span>{{ 'Collapse Sidebar'  }}</span>
+    </div>
+</nav>
